@@ -1,6 +1,6 @@
 /*---popcircles---*/
 .pop-circles .pop-c-nav-cont {
-  position: fixed;
+  position: relative;
   left: 25px;
   top: 25px;
   display: block; }
@@ -52,7 +52,11 @@
 
 body {
   background-color: #f2f2f2;
-  color: #333; }
+  color: #333;
+  font-family: 'Open Sans', sans-serif; }
+
+.menu-tittle {
+  padding: 15px; }
 
 .pop-circles {
   background-color: #16222A;
