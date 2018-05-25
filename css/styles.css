@@ -1,3 +1,50 @@
+/*---popcircles---*/
+.pop-circles .pop-c-nav-cont {
+  position: fixed;
+  left: 25px;
+  top: 25px;
+  display: block; }
+
+.pop-circles .pop-c-nav-base {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 76px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #111;
+  background-color: #3A6073;
+  cursor: pointer;
+  z-index: 10; }
+
+.pop-circles .lnk1 {
+  transition: all 0.15s ease-in-out; }
+
+.pop-circles .lnk2 {
+  transition: all 0.3s ease-in-out; }
+
+.pop-circles .lnk3 {
+  transition: all 0.45s ease-in-out; }
+
+.pop-circles .lnk4 {
+  transition: all 0.6s ease-in-out; }
+
+.pop-circles .pop-c-nav-lnk {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #666;
+  background-color: #1b3645;
+  z-index: 8; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,3 +53,8 @@
 body {
   background-color: #f2f2f2;
   color: #333; }
+
+.pop-circles {
+  background-color: #16222A;
+  color: #f3f3f3;
+  min-height: 500px; }
