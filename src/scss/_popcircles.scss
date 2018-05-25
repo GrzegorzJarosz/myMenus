@@ -1,1 +1,45 @@
+.pop-circles{
+	.pop-c-nav-cont{
+		position:fixed;
+		left:25px;
+		top:25px;
+		display:block;
+	}
 
+	.pop-c-nav-base{
+		position:fixed;
+		width:70px;
+		height:70px;
+		font-size:40px;
+		text-align: center;
+	  line-height:76px;
+		border-radius:50%;
+		box-shadow: 0 0 10px #111;
+		background-color: $popcircles-bcgr-menu-main;
+		cursor:pointer;
+		z-index: 10;
+	}
+
+	@for $i from 1 through 4{
+		.lnk#{$i}{
+			transition:all 0.15s*$i ease-in-out;
+		}
+	}
+
+	.pop-c-nav-lnk{
+		position:absolute;
+		width:55px;
+		height:55px;
+		left:10px;
+		top:10px;
+		font-size:30px;
+		border-radius:50%;
+		text-align: center;
+	  line-height:60px;
+		cursor:pointer;
+		box-shadow: 0 0 6px #666;
+		background-color:$popcircles-bcgr-menu-sub;
+		z-index: 8;
+	}
+
+}
