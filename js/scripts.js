@@ -23,3 +23,5 @@
 		activator = !activator;
 	});
 })();
+
+(function(){})();

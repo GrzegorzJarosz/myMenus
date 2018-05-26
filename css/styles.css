@@ -1,4 +1,5 @@
 /*---popcircles---*/
+/*---throwdisc---*/
 .pop-circles .pop-c-nav-cont {
   position: relative;
   left: 25px;
@@ -6,7 +7,7 @@
   display: block; }
 
 .pop-circles .pop-c-nav-base {
-  position: fixed;
+  position: relative;
   width: 70px;
   height: 70px;
   font-size: 40px;
@@ -45,6 +46,12 @@
   background-color: #1b3645;
   z-index: 8; }
 
+.burger {
+  cursor: pointer; }
+
+.sub-menu li {
+  cursor: pointer; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,9 +63,16 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 .menu-tittle {
-  padding: 15px; }
+  padding: 15px;
+  display: inline-block; }
 
 .pop-circles {
   background-color: #16222A;
   color: #f3f3f3;
   min-height: 600px; }
+
+.throw-disc {
+  background-color: #131313;
+  color: #f3f3f3;
+  min-height: 600px;
+  overflow: hidden; }
