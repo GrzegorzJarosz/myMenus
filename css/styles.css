@@ -47,10 +47,101 @@
   z-index: 8; }
 
 .burger {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  left: 93vw;
+  width: 30px;
+  height: 26px;
+  display: block; }
+  .burger .burg {
+    transition: all 0.2s ease-in-out;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 40px; }
+  .burger .burg:nth-child(1) {
+    margin-top: 0px; }
+  .burger .burg:nth-child(2) {
+    margin-top: 11px;
+    top: 0px;
+    right: 0px;
+    overflow: hidden; }
+  .burger .burg:nth-child(3) {
+    margin-top: 22px; }
+  .burger .shadow {
+    transition: all 0.4s ease-in-out;
+    width: 0px;
+    height: 0px;
+    top: -200px;
+    right: 0px;
+    background-color: blue;
+    display: block;
+    position: absolute;
+    border-radius: 40px;
+    opacity: 0.5; }
 
-.sub-menu li {
-  cursor: pointer; }
+.sub-menu {
+  transition: all 0.4s ease-in-out;
+  list-style: none;
+  font-size: 18px;
+  right: 0px;
+  top: 60px;
+  opacity: 0;
+  position: absolute;
+  text-align: right; }
+  .sub-menu li {
+    color: #fff;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.2s ease-in-out;
+    margin-right: -120px; }
+    .sub-menu li:nth-child(1) {
+      -webkit-transition-delay: 0.1s; }
+    .sub-menu li:nth-child(2) {
+      -webkit-transition-delay: 0.2s; }
+    .sub-menu li:nth-child(3) {
+      -webkit-transition-delay: 0.3s; }
+    .sub-menu li:nth-child(4) {
+      -webkit-transition-delay: 0.4s; }
+    .sub-menu li a {
+      text-decoration: none; }
+      .sub-menu li a:link, .sub-menu li a:visited {
+        color: inherit; }
+
+.opened .sub-menu {
+  right: 250px;
+  top: 200px;
+  z-index: 11;
+  opacity: 1; }
+  .opened .sub-menu li {
+    margin-right: 0px; }
+
+.opened .burg:nth-child(1) {
+  transform: translate(-5px, 11px) rotate(45deg);
+  width: 40px;
+  z-index: 10; }
+
+.opened .burg:nth-child(2) {
+  top: -150px;
+  right: -240px;
+  width: 450px;
+  height: 450px;
+  background-color: lightblue;
+  border-radius: 50%; }
+
+.opened .burg:nth-child(3) {
+  transform: translate(-5px, -11px) rotate(-45deg);
+  width: 40px;
+  z-index: 10; }
+
+.opened .shadow {
+  top: -180px;
+  right: -240px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%; }
 
 * {
   box-sizing: border-box;
