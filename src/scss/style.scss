@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'popcircles';
+@import 'throwdiscs';
 
 *{
   box-sizing: border-box;
@@ -14,10 +15,18 @@ body{
 }
 .menu-tittle{
   padding:15px;
+  display: inline-block;
 }
 
 .pop-circles{
   background-color: $popcircles-bcgr-main;
-  color:$popcircles-color-main;
+  color: $popcircles-color-main;
   min-height:600px;
+}
+
+.throw-disc{
+  background-color: $throwdisc-bcgr-main;
+  color: $throwdisc-color-main;
+  min-height:600px;
+  overflow: hidden;
 }
