@@ -1,34 +1,114 @@
+
 .burger{
   cursor:pointer;
+  position:relative;
+  left: 93vw;
+  width:30px;
+  height:26px;
+  display: block;
   .burg{
+    transition: all 0.2s ease-in-out;
+    width:30px;
+    height:4px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 40px;
   }
   .burg:nth-child(1){
+    margin-top: 0px;
   }
   .burg:nth-child(2){
+    margin-top: 11px;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
   }
   .burg:nth-child(3){
+    margin-top: 22px;
   }
   .shadow{
+    transition: all 0.4s ease-in-out;
+    width:0px;
+    height:0px;
+    top:-200px;
+    right:0px;
+    background-color: blue;
+    display: block;
+    position: absolute;
+    border-radius: 40px;
+    opacity: 0.5;
   }
 }
 .sub-menu{
+  transition: all 0.4s ease-in-out;
+  list-style: none;
+  font-size: 18px;
+  right: 0px;
+  top: 60px;
+  opacity:0;
+  position: absolute;
+  text-align: right;
   li{
+    color: #fff;
     cursor:pointer;
+    margin: 15px 0;
+    transition: all 0.2s ease-in-out;
+    margin-right: -120px;
     &:nth-child(1){
+				-webkit-transition-delay: 0.1s;
 		}
     &:nth-child(2){
+				-webkit-transition-delay: 0.2s;
 		}
     &:nth-child(3){
+				-webkit-transition-delay: 0.3s;
 		}
     &:nth-child(4){
+				-webkit-transition-delay: 0.4s;
 		}
     a{
+      text-decoration: none;
       &:link,&:visited{
+        color:inherit;
       }
     }
   }
 }
 
 .opened{
-
+  .sub-menu{
+    right:250px;
+    top: 200px;
+    z-index: 11;
+    opacity: 1;
+    li{
+      margin-right: 0px;
+    }
+  }
+  .burg:nth-child(1){
+    transform: translate(-5px ,11px) rotate(45deg);
+    width:40px;
+    z-index: 10;
+  }
+  .burg:nth-child(2){
+    top:-150px;
+    right: -240px;
+    width:450px;
+    height:450px;
+    background-color: lightblue;
+    border-radius: 50%;
+  }
+  .burg:nth-child(3){
+    transform: translate(-5px ,-11px) rotate(-45deg);
+    width:40px;
+    z-index: 10;
+  }
+  .shadow{
+    top:-180px;
+    right: -240px;
+    width:450px;
+    height:450px;
+    border-radius: 50%;
+  }
 }
