@@ -1,0 +1,98 @@
+
+.xburger{
+	width:24px;
+	height:24px;
+	transition:all 0.3s ease-in-out;
+	cursor:pointer;
+	.xburger-line{
+		width:24px;
+		height:4px;
+		background-color: #000;
+		display: block;
+		margin:6px 0;
+		transition:all 0.3s ease-in-out;
+	}
+}
+.xburger.active{
+	.xburger-line:nth-child(1){
+		width:30px;
+		transform:rotate(45deg) translate(5px,9px);
+	}
+	.xburger-line:nth-child(2){
+		opacity:0;
+	}
+	.xburger-line:nth-child(3){
+		width:30px;
+		transform:rotate(-45deg) translate(5px,-9px);
+	}
+}
+.burger-container{
+	padding:2px 6px 6px 6px;
+	display: inline-block;
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+
+/*---------menu---------------------*/
+.xburger-menu-container{
+	width:100%;
+	padding:15px;
+	background-color: #aaa;
+	height:67px;
+	transition:height 0.6s ease-in-out;
+	overflow:hidden;
+
+	.menu-brand-name{
+		display:block;
+		font-size: 18px;
+		margin-top:10px;
+		margin-bottom: 15px;
+	}
+	.menu-nav-list{
+		ul{
+			li{
+				list-style: none;
+				display: block;
+				font-size: 18px;
+				text-transform: uppercase;
+				cursor:pointer;
+				margin:10px;
+				opacity:0;
+				// padding:10px;
+				a{
+					text-decoration: none;
+					&:link,&:visited{
+						color:inherit;
+					}
+				}
+			}
+		}
+	}
+}
+
+.xburger-menu-container.opened{
+	height:220px;
+	.menu-brand-name,  ul li, .menu-nav-list{
+		opacity:1;
+	}
+}
+
+/*---------media------------*/
+
+@media only screen and (min-width: 680px){
+	.xburger-menu-container {
+		height:67px;
+		.menu-nav-list{
+			display:inline-block;
+			ul li{
+				display:inline-block;
+				opacity:1;
+			}
+		}
+		.menu-brand-name{display:inline-block;}
+	}
+	.xburger-menu-container.opened{height:67px;}
+	.burger-container{display:none;}
+
+}

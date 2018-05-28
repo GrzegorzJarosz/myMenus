@@ -1,12 +1,91 @@
+.xburger {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; }
+  .xburger .xburger-line {
+    width: 24px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out; }
+
+.xburger.active .xburger-line:nth-child(1) {
+  width: 30px;
+  transform: rotate(45deg) translate(5px, 9px); }
+
+.xburger.active .xburger-line:nth-child(2) {
+  opacity: 0; }
+
+.xburger.active .xburger-line:nth-child(3) {
+  width: 30px;
+  transform: rotate(-45deg) translate(5px, -9px); }
+
+.burger-container {
+  padding: 2px 6px 6px 6px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+/*---------menu---------------------*/
+.xburger-menu-container {
+  width: 100%;
+  padding: 15px;
+  background-color: #aaa;
+  height: 67px;
+  transition: height 0.6s ease-in-out;
+  overflow: hidden; }
+  .xburger-menu-container .menu-brand-name {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  .xburger-menu-container .menu-nav-list ul li {
+    list-style: none;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px;
+    opacity: 0; }
+    .xburger-menu-container .menu-nav-list ul li a {
+      text-decoration: none; }
+      .xburger-menu-container .menu-nav-list ul li a:link, .xburger-menu-container .menu-nav-list ul li a:visited {
+        color: inherit; }
+
+.xburger-menu-container.opened {
+  height: 220px; }
+  .xburger-menu-container.opened .menu-brand-name, .xburger-menu-container.opened ul li, .xburger-menu-container.opened .menu-nav-list {
+    opacity: 1; }
+
+/*---------media------------*/
+@media only screen and (min-width: 680px) {
+  .xburger-menu-container {
+    height: 67px; }
+    .xburger-menu-container .menu-nav-list {
+      display: inline-block; }
+      .xburger-menu-container .menu-nav-list ul li {
+        display: inline-block;
+        opacity: 1; }
+    .xburger-menu-container .menu-brand-name {
+      display: inline-block; }
+  .xburger-menu-container.opened {
+    height: 67px; }
+  .burger-container {
+    display: none; } }
+
+/*---xburger---*/
 /*---popcircles---*/
 /*---throwdisc---*/
-.pop-circles .pop-c-nav-cont {
+#pop-circles .pop-c-nav-cont {
   position: relative;
   left: 25px;
   top: 25px;
   display: block; }
 
-.pop-circles .pop-c-nav-base {
+#pop-circles .pop-c-nav-base {
   position: relative;
   width: 70px;
   height: 70px;
@@ -19,19 +98,19 @@
   cursor: pointer;
   z-index: 10; }
 
-.pop-circles .lnk1 {
+#pop-circles .lnk1 {
   transition: all 0.15s ease-in-out; }
 
-.pop-circles .lnk2 {
+#pop-circles .lnk2 {
   transition: all 0.3s ease-in-out; }
 
-.pop-circles .lnk3 {
+#pop-circles .lnk3 {
   transition: all 0.45s ease-in-out; }
 
-.pop-circles .lnk4 {
+#pop-circles .lnk4 {
   transition: all 0.6s ease-in-out; }
 
-.pop-circles .pop-c-nav-lnk {
+#pop-circles .pop-c-nav-lnk {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -146,24 +225,31 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
 
 body {
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: #131313;
+  color: #eee;
   font-family: 'Open Sans', sans-serif; }
 
 .menu-tittle {
   padding: 15px;
   display: inline-block; }
 
-.pop-circles {
+header {
+  height: 100vh; }
+
+#pop-circles {
   background-color: #16222A;
   color: #f3f3f3;
-  min-height: 600px; }
+  min-height: 100vh; }
 
-.throw-disc {
+#throw-disc {
   background-color: #131313;
   color: #f3f3f3;
-  min-height: 600px;
+  min-height: 100vh;
   overflow: hidden; }
+
+#about {
+  height: 100vh; }
