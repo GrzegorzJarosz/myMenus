@@ -1,12 +1,12 @@
 
-.burger{
+.tc-burger{
   cursor:pointer;
   position:relative;
   left: 93vw;
   width:30px;
   height:26px;
   display: block;
-  .burg{
+  .tc-burg{
     transition: all 0.2s ease-in-out;
     width:30px;
     height:4px;
@@ -15,16 +15,16 @@
     position: absolute;
     border-radius: 40px;
   }
-  .burg:nth-child(1){
+  .tc-burg:nth-child(1){
     margin-top: 0px;
   }
-  .burg:nth-child(2){
+  .tc-burg:nth-child(2){
     margin-top: 11px;
     top: 0px;
     right: 0px;
     overflow: hidden;
   }
-  .burg:nth-child(3){
+  .tc-burg:nth-child(3){
     margin-top: 22px;
   }
   .shadow{
@@ -86,12 +86,12 @@
       margin-right: 0px;
     }
   }
-  .burg:nth-child(1){
+  .tc-burg:nth-child(1){
     transform: translate(-5px ,11px) rotate(45deg);
     width:40px;
     z-index: 10;
   }
-  .burg:nth-child(2){
+  .tc-burg:nth-child(2){
     top:-150px;
     right: -240px;
     width:450px;
@@ -99,7 +99,7 @@
     background-color: lightblue;
     border-radius: 50%;
   }
-  .burg:nth-child(3){
+  .tc-burg:nth-child(3){
     transform: translate(-5px ,-11px) rotate(-45deg);
     width:40px;
     z-index: 10;

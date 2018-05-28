@@ -46,14 +46,14 @@
   background-color: #1b3645;
   z-index: 8; }
 
-.burger {
+.tc-burger {
   cursor: pointer;
   position: relative;
   left: 93vw;
   width: 30px;
   height: 26px;
   display: block; }
-  .burger .burg {
+  .tc-burger .tc-burg {
     transition: all 0.2s ease-in-out;
     width: 30px;
     height: 4px;
@@ -61,16 +61,16 @@
     display: block;
     position: absolute;
     border-radius: 40px; }
-  .burger .burg:nth-child(1) {
+  .tc-burger .tc-burg:nth-child(1) {
     margin-top: 0px; }
-  .burger .burg:nth-child(2) {
+  .tc-burger .tc-burg:nth-child(2) {
     margin-top: 11px;
     top: 0px;
     right: 0px;
     overflow: hidden; }
-  .burger .burg:nth-child(3) {
+  .tc-burger .tc-burg:nth-child(3) {
     margin-top: 22px; }
-  .burger .shadow {
+  .tc-burger .shadow {
     transition: all 0.4s ease-in-out;
     width: 0px;
     height: 0px;
@@ -118,12 +118,12 @@
   .opened .sub-menu li {
     margin-right: 0px; }
 
-.opened .burg:nth-child(1) {
+.opened .tc-burg:nth-child(1) {
   transform: translate(-5px, 11px) rotate(45deg);
   width: 40px;
   z-index: 10; }
 
-.opened .burg:nth-child(2) {
+.opened .tc-burg:nth-child(2) {
   top: -150px;
   right: -240px;
   width: 450px;
@@ -131,7 +131,7 @@
   background-color: lightblue;
   border-radius: 50%; }
 
-.opened .burg:nth-child(3) {
+.opened .tc-burg:nth-child(3) {
   transform: translate(-5px, -11px) rotate(-45deg);
   width: 40px;
   z-index: 10; }
