@@ -7,7 +7,7 @@
 	.xburger-line{
 		width:24px;
 		height:4px;
-		background-color: #000;
+		background-color: #eee;
 		display: block;
 		margin:6px 0;
 		transition:all 0.3s ease-in-out;
@@ -36,6 +36,16 @@
 
 /*---------menu---------------------*/
 .xburger-menu-container{
+	a{
+		text-decoration: none;
+		transition:color 0.1s ease;
+		&:link,&:visited{
+			color:inherit;
+		}
+		&:hover{
+			color:#999;
+		}
+	}
 	width:100%;
 	padding:15px;
 	background-color: #aaa;
@@ -45,27 +55,21 @@
 
 	.menu-brand-name{
 		display:block;
-		font-size: 18px;
-		margin-top:10px;
-		margin-bottom: 15px;
+		font-size: 22px;
+		margin-top:6px;
+		margin-bottom: 25px;
 	}
 	.menu-nav-list{
+		margin-left: 25px;
 		ul{
 			li{
 				list-style: none;
 				display: block;
-				font-size: 18px;
+				font-size: 16px;
 				text-transform: uppercase;
 				cursor:pointer;
 				margin:10px;
 				opacity:0;
-				// padding:10px;
-				a{
-					text-decoration: none;
-					&:link,&:visited{
-						color:inherit;
-					}
-				}
 			}
 		}
 	}

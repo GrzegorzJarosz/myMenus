@@ -8,7 +8,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 body{
@@ -23,6 +23,9 @@ body{
 
 header{
   height: 100vh;
+  .xburger-menu-container{
+    background-color: $xburg-bcg;
+  }
 }
 
 #pop-circles{
@@ -34,10 +37,12 @@ header{
 #throw-disc{
   background-color: $throwdisc-bcgr-main;
   color: $throwdisc-color-main;
-  min-height:100vh;
+  // height:100vh;
+  height:333px;
   overflow: hidden;
 }
 
 #about{
   height:100vh;
+  background-color: $popcircles-bcgr-main;
 }

@@ -2,7 +2,7 @@
 .tc-burger{
   cursor:pointer;
   position:relative;
-  left: 93vw;
+  left: calc(100% - 60px);
   width:30px;
   height:26px;
   display: block;
