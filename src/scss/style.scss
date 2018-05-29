@@ -22,10 +22,24 @@ body{
 }
 
 header{
-  height: 100vh;
   .xburger-menu-container{
     background-color: $xburg-bcg;
   }
+}
+
+#intro{
+  height:90vh;
+  p{
+    text-align: center;
+    padding:25px 15px;
+    margin-top: 100px;
+    animation: 3s infinite alternate scrollme;
+  }
+}
+
+@keyframes scrollme{
+  0%{opacity:0;}
+  100%{opacity:0.5;}
 }
 
 #pop-circles{
@@ -37,8 +51,7 @@ header{
 #throw-disc{
   background-color: $throwdisc-bcgr-main;
   color: $throwdisc-color-main;
-  // height:100vh;
-  height:333px;
+  height:100vh;
   overflow: hidden;
 }
 
